@@ -1,0 +1,52 @@
+'CÓDIGO PARA PERSONALIZAR A BARRA DE FERRAMENTAS
+'<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+'    <ribbon>
+'    <tabs>
+'    <tab id="customTab" label="WCP - Critical Power" insertAfterMso="TabHome">
+'                    <group id="customGroup1" label="Produtos">
+'                            <button id="customButton1" label="Produtos" size="large" onAction="customButton1_action" imageMso="ResearchPane" screentip="Pesquisar produtos seriados cadastrados" supertip="Utilize esta ferramenta para buscar os produtos seriados cadastrados em nosso banco de dados. Linha ETP, ETP Compact, RTD e RTDW além de NB's da Linha Corporate e Thor"/>
+'                        <separator id="MySeparator1"/>
+'                            <button id="customButton6" label="Buscar Engenheirados" size="normal" onAction="customButton6_action" imageMso="TableFind" screentip="Buscar Produtos Engenheirados" supertip="Utilize para buscar os produtos que foram engenheirados" />
+'                            <button id="customButton2" label="ML" size="normal" onAction="customButton2_action" imageMso="CalculateFull"  screentip="Calcular a margem dos produtos" supertip="Utilize para calcular a margem ML global"/>
+'                            <button id="customButton3" label="Limpar Produtos" size="normal" onAction="customButton3_action" imageMso="ClearAll" screentip="Excluir todos os produtos" supertip="Utilize para apagar todos os produtos e começar um orçamento novo"/>
+'                            <button id="customButton4" label="Adicionar Item" size="normal" onAction="customButton4_action" imageMso="InsertRow" screentip="Inserir linha" supertip="Utilize para inserir uma linha na parte inferior da tabela"/>
+'                            <button id="customButton5" label="Remover Item" size="normal" onAction="customButton5_action" imageMso="TableDeleteRows" screentip="Excluir linha" supertip="Utilize para excluir o item desejado"/>
+'                            <button id="customButton7" label="Dimensionar Bancos" size="normal" onAction="customButton7_action" imageMso="GroupInsertSymbols" screentip="Dimensionar Bancos de Baterias " supertip="Utilize para dimensionar bancos de baterias para Nobreaks e Retificadores"/>
+'                    </group>
+'                    <group id="customGroup2" label="Engenheirados">
+'                            <button id="customButton8" label="Adicionar Equipamentos" size="large" onAction="customButton8_action" imageMso="ReadingViewToolsMenu" screentip="Adicionar Equipamentos" supertip="Utilize esta ferramenta para adicionar equipamentos pré cadastrados para construir o equipamento engenheirado"/>
+'                            <button id="customButton9" label="Limpar Tudo" size="large" onAction="customButton9_action" imageMso="ClearAll"  screentip="Excluir todos os produto" supertip="Utilize para apagar todos os produtos e começar um orçamento novo"/>
+'                    </group>
+'                    <group id="customGroup3" label="Serviços">
+'                            <button id="customButton10" label="ML" size="normal" onAction="customButton10_action" imageMso="CalculateFull"  screentip="Calcular a margem dos serviços" supertip="Utilize para calcular a margem ML global"/>
+'                            <button id="customButton11" label="Limpar Serviços" size="normal" onAction="customButton11_action" imageMso="ClearAll" screentip="Excluir todos os serviços" supertip="Utilize para apagar todos os serviços e começar um orçamento novo"/>
+'                        <separator id="MySeparator3"/>
+'                            <button id="customButton12" label="Adicionar Item" size="normal" onAction="customButton12_action" imageMso="InsertRow" screentip="Inserir linha" supertip="Utilize para inserir uma linha na parte inferior da tabela"/>
+'                            <button id="customButton13" label="Remover Item" size="normal" onAction="customButton13_action" imageMso="TableDeleteRows" screentip="Excluir linha" supertip="Utilize para excluir o item desejado"/>
+'                    </group>
+'                    <group id="customGroup4" label="Proposta">
+'                            <button id="customButton14" label="Limpar Tabelas" size="large" onAction="customButton14_action" imageMso="FormFieldClear"  screentip="Limpar tabelas" supertip="Utilize para limpar todas as tabelas"/>
+'                        <separator id="MySeparator4"/>
+'                        <menu id="MyDropdownMenu" label="Buscas" size="large" imageMso="ZoomToSelection">
+'                            <button id="customButton15" label="Buscar Produtos"  onAction="customButton15_action" imageMso="ShowClipboard" screentip="Buscar Produtos Orçados" supertip="Utilize para buscar os produtos que foram orçados"/>
+'                            <button id="customButton16" label="Buscar Serviços"  onAction="customButton16_action" imageMso="ShowClipboard" screentip="Buscar Produtos Orçados" supertip="Utilize para buscar os serviços que foram orçados"/>
+'                        </menu>
+'                    <separator id="MySeparator5"/>
+'                        <button id="customButton17" label="Criar Proposta Comercial" size="large" onAction="customButton17_action" imageMso="FileSaveAsWordDocx" screentip="Criar Proposta" supertip="Utilize para gerar uma proposta comercial"/>
+'                    <separator id="MySeparator6"/>
+'                        <button id="customButton18" label="Controle" size="large" onAction="customButton18_action" imageMso="RecordsSaveRecord" screentip="Alimentar Planilha de Controle" supertip="Utilize para alimentar sua planilha de controle de propostas"/>
+'                    </group>
+'                    <group id="customGroup5" label="Funções Auxiliares">
+'                    <menu id="MyDropdownMenu1" label="Auxiliares" size="large" imageMso="FunctionWizard">
+'                        <button id="customButton19" label="Atualizar Moedas" onAction="customButton19_action" imageMso="InternationalCurrency"  screentip="Atualizar Moedas" supertip="Utilize para atualizar as cotações do dólar e do euro"/>
+'                        <button id="customButton20" label="ICMS" onAction="customButton20_action" imageMso="PercentStyle" screentip="Conferir ICMS" supertip="Utilize para conferir as aliquotas de ICMS"/>
+'                        <button id="customButton21" label="Sugestões" onAction="customButton21_action" imageMso="TechnicalSupport" screentip="Problemas ou sugestões" supertip="Qualquer problema e/ou mal funcionamento, por favor, entre em contato pelo e-mail: botelho@weg.net"/>
+'                    </menu>
+'                </group>
+'            <group idMso="GroupForecast"/>
+'        </tab>
+'    </tabs>
+'    </ribbon>
+'</customUI>
+''
+
