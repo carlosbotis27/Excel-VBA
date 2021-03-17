@@ -1,0 +1,26 @@
+    Dim OutApp As Object
+    Dim OutMail As Object
+    Dim Signature As String
+	  Application.ScreenUpdating = False
+        Set OutApp = CreateObject("Outlook.Application")
+        Set OutMail = OutApp.CreateItem(0)
+                With OutMail
+                    .display
+                End With
+                Signature = OutMail.HTMLBody
+                        On Error Resume Next
+                        With OutMail
+                        .To = "email@email.com.br"
+                        .cc
+                        .Subject = "Assunto do e-mail)
+                        .HTMLBody = "texto que vai no corpo do email" & txtemail.Value & Signature
+                        .attachments
+                        .send ' para enviar com conferência, alterar .send para .display
+                        End With
+        On Error GoTo 0
+        Set OutMail = Nothing
+        Set OutApp = Nothing
+        MsgBox "Email enviado, muito obrigado!"
+        Unload formemail
+	  Application.ScreenUpdating = true
+End Sub
